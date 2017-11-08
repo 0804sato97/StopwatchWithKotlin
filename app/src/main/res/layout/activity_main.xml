@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="com.example.stopwatch.MainActivity">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:orientation="vertical" android:layout_alignParentTop="true"
+                  android:gravity="center_horizontal"
+                  android:layout_alignParentStart="true"
+                  android:id="@+id/parentLayout">
+        <TextView
+                android:text="TextView"
+                android:textSize="18pt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" android:id="@+id/textView"/>
+        <GridLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:columnCount="3"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal">
+            <Button android:text="START" android:id="@+id/bt_start" android:layout_columnWeight="1"/>
+            <Button android:text="STOP" android:id="@+id/bt_stop" android:layout_columnWeight="1"/>
+            <Button android:text="RESET" android:id="@+id/bt_reset" android:layout_columnWeight="1"/>
+        </GridLayout>
+    </LinearLayout>
+</RelativeLayout>
